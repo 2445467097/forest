@@ -15,7 +15,7 @@ spring:
   redis:
     host: 127.0.0.1
     port: 6379
-    password: # redis 密码
+    password:
     database: 1
     timeout: 3000
     jedis:
@@ -27,7 +27,7 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/forest?characterEncoding=UTF-8&autoReconnect=true&useSSL=false&serverTimezone=Asia/Shanghai&allowMultiQueries=true
     username: root
-    password: # 数据库密码
+    password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver
     resources:
       add-mappings: true

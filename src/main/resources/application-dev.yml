@@ -34,7 +34,7 @@ spring:
       test-while-idle: true
       test-on-borrow: false
       test-on-return: false
-      connection-properties: config.decrypt=true;config.decrypt.key=${publicKey}
+      # 关闭密码加密 connection-properties: config.decrypt=true;config.decrypt.key=${publicKey}
       filters: config,stat
       max-pool-prepared-statement-per-connection-size: 100
       stat-view-servlet:

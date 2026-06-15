@@ -9,9 +9,9 @@ spring:
       content-type: text/html
     cache: false
   redis:
-    host: 192.168.31.200
+    host: 127.0.0.1
     port: 6379
-    password: d9d2j9w2
+    password:
     database: 1
     timeout: 3000
     jedis:
@@ -22,9 +22,9 @@ spring:
         min-idle: 0
   datasource:
     druid:
-      url: jdbc:mysql://192.168.31.200:3306/forest?characterEncoding=UTF-8&autoReconnect=true&useSSL=false&serverTimezone=Asia/Shanghai&allowMultiQueries=true
+      url: jdbc:mysql://localhost:3306/forest?characterEncoding=UTF-8&autoReconnect=true&useSSL=false&serverTimezone=Asia/Shanghai&allowMultiQueries=true
       username: root
-      password: Ldh1NrsXJntz5nTXeO0nPh+8s1FMe+JHCfXy2Zj3egqqjegN+mNe+53ZmduUlVdE4ZqKuUho7T9yftc6AYYKog==
+      password: 123456
       driver-class-name: com.mysql.cj.jdbc.Driver
       # 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒
       time-between-eviction-runs-millis: 60000
